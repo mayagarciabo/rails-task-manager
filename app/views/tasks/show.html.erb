@@ -1,5 +1,9 @@
 <%= @task.name %>
 <%= @task.details %>
-<%= @task.completed %>
+<% if @task.completed %>
+      <input type='checkbox' checked>
+    <% else %>
+      <input type='checkbox'>
+    <% end %>
 
 <%= console %>
