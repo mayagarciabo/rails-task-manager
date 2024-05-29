@@ -10,7 +10,7 @@
 
     <%= link_to task.name, task_path(task.id)%>
     <%= link_to "Edit", edit_task_path(task.id)  %>
-    <%= link_to "Delete", task_path(task.id), data: {turbo_method: :delete, turbo_confirmation: "Estas seguro/a que quieres borrar este task?"} %>
+    <%= link_to "Delete", task_path(task.id) %>
   </p>
 <% end %>
 
